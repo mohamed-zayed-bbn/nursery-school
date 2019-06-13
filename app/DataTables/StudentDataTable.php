@@ -22,7 +22,7 @@ class StudentDataTable extends DataTable
 
     public function query()
     {
-        return Student::query();
+        return Student::query()->with('class');
     }
 
     public function html()
